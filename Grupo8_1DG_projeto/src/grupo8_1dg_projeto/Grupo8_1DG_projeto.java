@@ -1,3 +1,10 @@
+/**
+*
+* @author Bruno Silva
+* @author Ana Leite
+* @author Ricardo Osório
+* @author João Moreira
+*/
 package grupo8_1dg_projeto;
 
 import java.io.FileNotFoundException;
