@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 public class Ficheiros {
     
-    public static Scanner in=new Scanner(System.in);
-    
     public static Scanner fileLeitura() throws FileNotFoundException{
         Scanner file=new Scanner(new File("Ficheiro.txt"));
         return file;
