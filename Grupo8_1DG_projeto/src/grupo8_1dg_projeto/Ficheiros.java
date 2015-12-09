@@ -4,9 +4,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 public class Ficheiros {
     
-    public static Scanner fileLeitura() throws FileNotFoundException{
-        Scanner file=new Scanner(new File("Ficheiro.txt"));
-        return file;
+    public static Scanner ObjetoParaLerFicheiro1() throws FileNotFoundException{
+        Scanner file1=new Scanner(new File("Ficheiro.txt"));
+        return file1;
+    }
+    
+    public static Scanner ObjetoParaLerFicheiro2() throws FileNotFoundException{
+        Scanner file2=new Scanner(new File("Ficheiro.txt"));
+        return file2;
     }
     
     public static int numeroCondicoes(Scanner file){
