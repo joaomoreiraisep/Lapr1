@@ -8,8 +8,7 @@ public class Ficheiros {
         Scanner file=new Scanner(new File("Ficheiro.txt"));
         return file;
     }
-    //para já assume que o Z não tem nenhum valor antes
-    //falta verificações, não esquecer de verificar se não existir coeficiente em alguma variavel considerar como 1.
+    //para já assume que o Z nunca vai ter um coeficiente diferente de 1
     public static int LerFicheiro(Scanner file, int [][]Matriz) {
         String linha[];
         int contLinha=0;
