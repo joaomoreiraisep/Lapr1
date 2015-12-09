@@ -13,11 +13,15 @@ import java.util.Scanner;
 public class Grupo8_1DG_projeto {
 
     public static void main(String[] args) throws FileNotFoundException {
-
-        //ler ficheiro
+        int numLinhas;
+        int Matriz[][]={{1,0,0,0,0,0,0}, {0,0,0,1,0,0,0}, {0,0,0,0,1,0,0}, {0,0,0,0,0,1,0}};
         Scanner file = Ficheiros.fileLeitura();
-
+        numLinhas=Ficheiros.LerFicheiro(file, Matriz);
+        //para testar
+        for(int a=0;a<Matriz.length;a++){
+            for(int b=0;b<Matriz[0].length;b++)
+                System.out.print(Matriz[a][b]+" ");
+            System.out.println("\n");
+        }
     }
-
-
 }
