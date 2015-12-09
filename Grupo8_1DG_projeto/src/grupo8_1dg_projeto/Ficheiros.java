@@ -8,8 +8,19 @@ public class Ficheiros {
         Scanner file=new Scanner(new File("Ficheiro.txt"));
         return file;
     }
+    
+    public static int numeroCondicoes(Scanner file){
+        String line;
+        int numLinhas=0;
+        while(file.hasNext()){
+            line=file.nextLine();
+            numLinhas++;
+        }
+        return numLinhas;
+    }
+    
     //para já assume que o Z nunca vai ter um coeficiente diferente de 1
-    public static int LerFicheiro(Scanner file, int [][]Matriz) {
+    public static void LerFicheiroParaMatriz(Scanner file, int [][]Matriz) {
         String linha[];
         int contLinha=0;
         while(file.hasNext()){
@@ -46,6 +57,5 @@ public class Ficheiros {
             }
             contLinha++;                                                        //pode variar,pode ter uma condição, duas, tres, etc
         }
-        return contLinha;
     }
 }
