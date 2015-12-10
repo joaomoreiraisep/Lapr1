@@ -4,14 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 public class Ficheiros {
     
-    public static Scanner ObjetoParaLerFicheiro1() throws FileNotFoundException{
-        Scanner file1=new Scanner(new File("Ficheiro.txt"));
-        return file1;
-    }
-    
-    public static Scanner ObjetoParaLerFicheiro2() throws FileNotFoundException{
-        Scanner file2=new Scanner(new File("Ficheiro.txt"));
-        return file2;
+    public static Scanner ObjetoParaLerFicheiro() throws FileNotFoundException{
+        Scanner file=new Scanner(new File("Ficheiro.txt"));
+        return file;
     }
     
     public static int numeroCondicoes(Scanner file){
@@ -61,6 +56,12 @@ public class Ficheiros {
                 }
             }
             contLinha++;                                                        //pode variar,pode ter uma condição, duas, tres, etc
+        }
+    }
+    
+    public static void preencherCoeficientes(int numLinhas, int[][]Matriz){
+        for(int a=1;a<numLinhas;a++){
+                Matriz[a][(numLinhas-2)+a]=1;
         }
     }
 }
